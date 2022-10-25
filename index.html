@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <title>rock paper scissors</title>
+</head>
+<body>
+  <div class="container">
+
+    <audio src="user-winning-sound.mp3" class="user-winning-sound"></audio>
+    <audio src="computer-winning-sound.mp3" class="computer-winning-sound"></audio>
+    <audio src="equal-sound.mp3" class="equal-sound"></audio>
+    <h1 class="round">Round <span class="round-counter">1</span></h1>
+
+    <div class="player-section">
+      <h3>Your Score</h3>
+      <div class="player-score">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+      </div>
+      <div class="player-images">
+        <img class="player-img" src="1.png" alt="rock">
+        <img class="player-img" src="2.png" alt="paper">
+        <img class="player-img" src="3.png" alt="scissors">
+      </div>
+    </div>
+
+    <div class="computer-section">
+      <h3>Computer Score</h3>
+      <div class="computer-score">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+      </div>
+      <div class="computer-images">
+        <img class="computer-img hidden" src="1.png" alt="rock">
+        <img class="computer-img hidden" src="2.png" alt="paper">
+        <img class="computer-img hidden" src="3.png" alt="scissors">
+      </div>
+    </div>
+  </div>
+
+  <div class="user"><h1 style="font-size: 4em;">You have won!</h1></div>
+  
+  <div class="computer"><h1 style="font-size: 4em;">You have failed!</h1></div>
+  <script src="script.js"></script>
+</body>
+</html>
